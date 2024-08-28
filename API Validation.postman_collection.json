@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "44cda380-9b89-4d31-99e6-dc0afa5b98d9",
+		"name": "API Validation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37977157"
+	},
+	"item": [
+		{
+			"name": "Valid User Creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 7350934309,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Missing Roll Number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Missing First Name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Missing Last Name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Missing Phone Number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Missing Email ID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Phone Number Format",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "invalid Email ID Format",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid First Name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Last Name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "240344220053",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Sourabh\",\r\n  \"lastName\": \"Dhavale\",\r\n  \"phoneNumber\": 735054784,\r\n  \"emailId\": \"sourabh1199@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://bfhldevapigw.healthrx.co.in/automation-campus/create/user"
+			},
+			"response": []
+		}
+	]
+}
